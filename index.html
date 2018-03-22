@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <label for="categoryId">a) Get category data: </label>
+    <input type="text" id="categoryId" value="201"></input>
+    <button onclick="getData()">Get data</button>
+    <div>&nbsp;</div>
+    <span id="categoryData" style="display: none">
+        ParentCategoryID=<span id="parentCategoryId"></span>, Name=<span id="name"></span>, Keywords=<span id="keywords"></span>
+    </span>
+    
+    <div>&nbsp;</div>
+
+    <label for="hierarchy">b) Get categories in the Nth hierarchy: </label>
+    <input type="text" id="hierarchy" value="2"></input>
+    <button onclick="getCategories()">Get categories</button>
+    <div>&nbsp;</div>
+    <span id="categories" style="display: none">
+        
+    </span>
+
+    </body>
+</html>
